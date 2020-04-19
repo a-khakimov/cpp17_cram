@@ -9,4 +9,5 @@ SOURCES += \
     001_containers_erase-remove_idiom.cpp \
     002_containers_insert_sorted.cpp \
     003_containers_map_try_emplace.cpp \
+    004_containers_map_insert_with_hints.cpp \
     main.cpp

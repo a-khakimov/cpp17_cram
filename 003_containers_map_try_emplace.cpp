@@ -4,7 +4,7 @@
 #include <map>
 
 
-#if 1
+#if false
 int main()
 {
     struct billionaire {
