@@ -11,4 +11,5 @@ SOURCES += \
     003_containers_map_try_emplace.cpp \
     004_containers_map_insert_with_hints.cpp \
     005_containers_modify_map_key.cpp \
+    006_containers_use_unordered_map_for_custom_types.cpp \
     main.cpp
