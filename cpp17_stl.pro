@@ -6,4 +6,6 @@ CONFIG -= qt
 QMAKE_CXXFLAGS += -std=c++17
 
 SOURCES += \
-    001_containers_erase-remove_idiom.cpp
+    001_containers_erase-remove_idiom.cpp \
+    002_containers_insert_sorted.cpp \
+    main.cpp

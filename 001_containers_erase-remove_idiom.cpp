@@ -23,6 +23,7 @@ void quick_remove_at(std::vector<T> &v, typename std::vector<T>::iterator it)
     }
 }
 
+#if false
 int main()
 {
     // c++11
@@ -51,3 +52,4 @@ int main()
     for (auto i : v2) { std::cout << i << ", "; } std::cout << std::endl;
 
 }
+#endif
