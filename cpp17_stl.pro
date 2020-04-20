@@ -3,7 +3,7 @@ CONFIG += console c++17
 CONFIG -= app_bundle
 CONFIG -= qt
 
-QMAKE_CXXFLAGS += -std=c++17
+QMAKE_CXXFLAGS += -std=c++17 -D_GLIBCXX_DEBUG
 
 SOURCES += \
     001_containers_erase-remove_idiom.cpp \

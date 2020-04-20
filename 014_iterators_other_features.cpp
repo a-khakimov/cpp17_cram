@@ -1,5 +1,6 @@
 #include <iostream>
 #include <list>
+#include <vector>
 #include <iterator>
 
 void reverse()
@@ -63,9 +64,20 @@ void limiter(const char* argv)
     // TODO: разобаться!
 }
 
+void check_iterator()
+{
+    std::vector<int> v {1, 2, 3};
+    v.shrink_to_fit();
+    const auto it (std::begin(v));
+    std::cout << *it << std::endl; // good
+    v.push_back(456);
+    // std::cout << *it << std::endl; // bad (-D_GLIBCXX_DEBUG)
+}
+
 #if true
 int main()
 {
+    check_iterator();
     reverse();
     limiter("hello");
     limiter("hel \0 lo");
