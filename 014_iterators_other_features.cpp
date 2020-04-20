@@ -74,7 +74,7 @@ void check_iterator()
     // std::cout << *it << std::endl; // bad (-D_GLIBCXX_DEBUG)
 }
 
-#if true
+#if false
 int main()
 {
     check_iterator();
