@@ -19,4 +19,5 @@ SOURCES += \
     011_iterators_custom_iterator.cpp \
     012_iterators_inserters.cpp \
     013_iterators_algorythm_fibbonachy.cpp \
+    014_iterators_other_features.cpp \
     main.cpp

@@ -32,10 +32,10 @@ public:
     fibit end() const { return fibit{ end_n }; }
 };
 
-#if true
+#if false
 int main()
 {
-    for (size_t i : fib_range(10)) {
+    for (const auto& i : fib_range(10)) {
         std::cout << i << ", ";
     }
     std::cout << std::endl;
