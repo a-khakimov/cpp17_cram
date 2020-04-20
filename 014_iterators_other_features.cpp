@@ -14,9 +14,51 @@ void reverse()
     std::cout << std::endl;
 }
 
+void limiter(const char* argv)
+{
+    class cstring_iterator_sentinel {};
+
+    class cstring_iterator {
+        const char* s { nullptr };
+    public:
+        explicit cstring_iterator(const char* str) : s {str} {}
+        char operator*() const { return *s; }
+        cstring_iterator& operator++()
+        {
+            ++s;
+            return *this;
+        }
+        bool operator!=(const cstring_iterator_sentinel) const
+        {
+            return s != nullptr && *s != '\0';
+        }
+    };
+
+    class cstring_range {
+        const char* s { nullptr };
+    public:
+        explicit cstring_range(const char* str) : s { str } {}
+        cstring_iterator begin() const
+        {
+            return cstring_iterator {s};
+        }
+        cstring_iterator_sentinel end() const
+        {
+            return {};
+        }
+    };
+
+    for (const auto& c : cstring_range(argv)) {
+        std::cout << c;
+    }
+    std::cout << std::endl;
+}
+
 #if true
 int main()
 {
     reverse();
+    limiter("hello");
+    limiter("hel \0 lo");
 }
 #endif
