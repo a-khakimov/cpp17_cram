@@ -18,4 +18,5 @@ SOURCES += \
     010_containers_priority_queue.cpp \
     011_iterators_custom_iterator.cpp \
     012_iterators_inserters.cpp \
+    013_iterators_algorythm_fibbonachy.cpp \
     main.cpp
