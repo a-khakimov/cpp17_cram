@@ -37,7 +37,7 @@ std::multimap<std::size_t, std::string> get_sentence_stats(const std::string& co
     return ret;
 }
 
-#if true
+#if false
 int main()
 {
     std::cin.unsetf(std::ios::skipws);
