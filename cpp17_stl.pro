@@ -12,4 +12,5 @@ SOURCES += \
     004_containers_map_insert_with_hints.cpp \
     005_containers_modify_map_key.cpp \
     006_containers_use_unordered_map_for_custom_types.cpp \
+    007_containers_stack_rpm.cpp \
     main.cpp

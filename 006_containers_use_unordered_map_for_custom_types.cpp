@@ -32,7 +32,7 @@ struct hash<coord>
 }
 #endif
 
-#if true
+#if false
 int main()
 {
     std::unordered_map<coord, int> m {
