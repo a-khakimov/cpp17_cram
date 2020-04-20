@@ -52,6 +52,15 @@ void limiter(const char* argv)
         std::cout << c;
     }
     std::cout << std::endl;
+
+    for (const auto& c : std::string(argv)) {
+        std::cout << c;
+    }
+    std::cout << std::endl;
+
+    // и что??
+    // не понял зачем это все нужно
+    // TODO: разобаться!
 }
 
 #if true
