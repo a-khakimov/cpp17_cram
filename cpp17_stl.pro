@@ -17,4 +17,5 @@ SOURCES += \
     009_containers_multimap_search_long_texts.cpp \
     010_containers_priority_queue.cpp \
     011_iterators_custom_iterator.cpp \
+    012_iterators_inserters.cpp \
     main.cpp
