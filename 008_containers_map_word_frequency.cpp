@@ -13,7 +13,7 @@ std::string filter_punctuation(const std::string& s)
 }
 
 
-#if true
+#if false
 int main()
 {
     std::map<std::string, std::size_t> words;

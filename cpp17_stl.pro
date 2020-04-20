@@ -14,4 +14,5 @@ SOURCES += \
     006_containers_use_unordered_map_for_custom_types.cpp \
     007_containers_stack_rpm.cpp \
     008_containers_map_word_frequency.cpp \
+    009_containers_multimap_search_long_texts.cpp \
     main.cpp
