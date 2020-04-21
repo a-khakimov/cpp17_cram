@@ -22,4 +22,5 @@ SOURCES += \
     014_iterators_other_features.cpp \
     015_iterators_zip.cpp \
     016_lambdas.cpp \
+    017_lambdas_functions_concat.cpp \
     main.cpp
