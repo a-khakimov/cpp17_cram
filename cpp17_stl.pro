@@ -23,4 +23,5 @@ SOURCES += \
     015_iterators_zip.cpp \
     016_lambdas.cpp \
     017_lambdas_functions_concat.cpp \
+    018_lambdas_predicats.cpp \
     main.cpp

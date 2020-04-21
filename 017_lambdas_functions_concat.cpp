@@ -1,12 +1,12 @@
 #include <iostream>
 #include <functional>
 
-// непонятно, но круто
+// непонятно, но круто (после 018_lambdas_predicats стало понятно)
 
 // typename ...Ts - переменное количество аргументов шаблона
 // sizeof... (ts) - так мы узнаем количество аргументов
-// почему без constexpr не работает?
-// [=](auto ...parameters) - чтооооо?
+// почему без constexpr не работает? - Потому, что эта шаблонная функция разворачивается в процессе компиляции
+// [=](auto ...parameters) - чтооооо? - Да просто переменное число аргументов
 
 template <typename T, typename ...Ts>
 auto concat(T t, Ts ...ts)
@@ -20,7 +20,7 @@ auto concat(T t, Ts ...ts)
     }
 }
 
-#if true
+#if false
 int main()
 {
     auto twice ([](int i) { return i * 2; });
