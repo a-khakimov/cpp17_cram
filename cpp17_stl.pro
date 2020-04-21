@@ -1,9 +1,9 @@
 TEMPLATE = app
-CONFIG += console c++17
+CONFIG += console
 CONFIG -= app_bundle
 CONFIG -= qt
 
-QMAKE_CXXFLAGS += -std=c++17 -D_GLIBCXX_DEBUG
+QMAKE_CXXFLAGS += -std=c++17 -fconcepts # -D_GLIBCXX_DEBUG -pedantic
 
 SOURCES += \
     001_containers_erase-remove_idiom.cpp \

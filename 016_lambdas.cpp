@@ -1,7 +1,18 @@
+/*
+[список захвата](параметры)
+    mutable             (необязательный)
+    constexpr           (необязательный)
+    exceptionattr       (необязательный)
+    -> возвращаемый тип (необязательный)
+{
+    // тело
+}
+*/
+
 #include <iostream>
 #include <string>
 
-#if true
+#if false
 int main()
 {
     auto just_one ( [](){ return 1; } );
@@ -30,14 +41,52 @@ int main()
 #endif
 
 
+// Полиморфизм с лямбда-выражениями
+/* понял плохо, но круто
+ * надо искать способы применения этого примера
+ */
 
-/*
-[список захвата](параметры)
-    mutable             (необязательный)
-    constexpr           (необязательный)
-    exceptionattr       (необязательный)
-    -> возвращаемый тип (необязательный)
+#include <deque>
+#include <list>
+#include <vector>
+#include <functional>
+
+static auto consumer(auto& container)
 {
-    // тело
+    return [&] (auto value) {
+        container.push_back(value);
+    };
 }
-*/
+
+static void print(const auto& c)
+{
+    for (const auto i : c) {
+        std::cout << i << ", ";
+    }
+    std::cout << std::endl;
+}
+
+#if true
+int main()
+{
+    std::deque<int> d;
+    std::vector<int> v;
+    std::list<int> l;
+
+    const std::vector<std::function<void(int)>> consumers {
+        consumer(d), consumer(l), consumer(v)
+    };
+
+    for (size_t i = 0; i < 10; ++i) {
+        //  почему && ?
+        for (auto&& consume : consumers) {
+            consume(i);
+        }
+    }
+
+    print(d);
+    print(l);
+    print(v);
+}
+#endif
+
