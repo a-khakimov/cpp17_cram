@@ -26,4 +26,5 @@ SOURCES += \
     018_lambdas_predicats.cpp \
     019_lambdas_multicall.cpp \
     020_lambdas_transform_if.cpp \
+    021_lambdas_cartesian_product.cpp \
     main.cpp

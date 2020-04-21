@@ -30,7 +30,7 @@ auto filter(T predicate)
 }
 
 
-#if true
+#if false
 int main()
 {
     std::vector<int> v { 1, 2, 3, 4, 5, 6 };
