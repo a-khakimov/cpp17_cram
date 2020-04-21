@@ -30,15 +30,15 @@ auto combine2(F binary_func, Condition condition, Conditions ...conditions)
 #if false
 int main()
 {
-    auto begins_with_a = [](const std::string& s) {
+    auto begins_with_a = [](const std::string& s) -> bool {
         return s.find("a") == 0;
     };
 
-    auto ends_with_b = [](const std::string& s) {
+    auto ends_with_b = [](const std::string& s) -> bool {
         return s.rfind("b") == s.length() - 1;
     };
 
-    auto begins_with_c = [](const std::string& s) {
+    auto begins_with_c = [](const std::string& s) -> bool {
         return s.find("c") == 0;
     };
 

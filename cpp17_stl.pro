@@ -24,4 +24,5 @@ SOURCES += \
     016_lambdas.cpp \
     017_lambdas_functions_concat.cpp \
     018_lambdas_predicats.cpp \
+    019_lambdas_multicall.cpp \
     main.cpp
