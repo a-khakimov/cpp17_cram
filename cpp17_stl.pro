@@ -21,4 +21,5 @@ SOURCES += \
     013_iterators_algorythm_fibbonachy.cpp \
     014_iterators_other_features.cpp \
     015_iterators_zip.cpp \
+    016_lambdas.cpp \
     main.cpp
