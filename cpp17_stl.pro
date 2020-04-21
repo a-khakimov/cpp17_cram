@@ -25,4 +25,5 @@ SOURCES += \
     017_lambdas_functions_concat.cpp \
     018_lambdas_predicats.cpp \
     019_lambdas_multicall.cpp \
+    020_lambdas_transform_if.cpp \
     main.cpp

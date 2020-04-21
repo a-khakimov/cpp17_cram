@@ -19,7 +19,7 @@ static auto brace_print (char a, char b)
     };
 }
 
-#if true
+#if false
 int main()
 {
     auto f = brace_print('(', ')');
