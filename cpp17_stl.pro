@@ -36,3 +36,6 @@ SOURCES += \
     028_algo_merge.cpp \
     029_complex_algos_prefix_tree.cpp \
     main.cpp
+
+DISTFILES += \
+    db.txt

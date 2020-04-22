@@ -6,6 +6,8 @@
 #include <map>
 #include <vector>
 #include <string>
+#include <fstream>
+#include <sstream>
 
 template <typename T>
 class trie {
@@ -62,41 +64,35 @@ public:
 
 };
 
+static void promt()
+{
+    std::cout << "Next input please: ";
+}
+
+/* g++-8 029_complex_algos_prefix_tree.cpp -o a.out -std=c++17 */
+
 #if true
 int main()
 {
     trie<std::string> t;
-    t.insert({ "hi", "how", "are", "you" });
-    t.insert({ "hi", "i", "am", "great", "thanks" });
-    t.insert({ "what", "are", "you", "doing" });
-    t.insert({ "i", "am", "watching", "a", "movie" });
-    t.insert({ "hi", "who", "are", "you" });
-    t.insert({ "what", "the", "fuck" });
-    t.insert({ "fuck", "you" });
-    t.insert({ "suck", "my", "dick" });
-    t.insert({ "are", "you", "from" });
 
-    std::cout << "--- tree ---" << std::endl;
-    t.print();
-
-    std::cout << "--- hi ---" << std::endl;
-    if (auto st = t.subtrie(std::initializer_list<std::string>{"hi"}); st) {
-        st->get().print();
+    std::fstream infile { "db.txt" };
+    for (std::string line; std::getline(infile, line);) {
+        std::istringstream iss { line };
+        t.insert(std::istream_iterator<std::string> { iss }, { });
     }
 
-    std::cout << "--- are ---" << std::endl;
-    if (auto st = t.subtrie(std::initializer_list<std::string>{"are"}); st) {
-        st->get().print();
-    }
+    promt();
 
-    std::cout << "--- what ---" << std::endl;
-    if (auto st = t.subtrie(std::initializer_list<std::string>{"what"}); st) {
-        st->get().print();
-    }
-
-    std::cout << "--- you ---" << std::endl;
-    if (auto st = t.subtrie(std::initializer_list<std::string>{"you"}); st) {
-        st->get().print();
+    for (std::string line; std::getline(std::cin, line);) {
+        std::istringstream iss { line };
+        if (auto st = t.subtrie(std::istream_iterator<std::string>{iss}, {}); st) {
+            st->get().print();
+        } else {
+            std::cout << "No suggetions found" << std::endl;
+        }
+        std::cout << "----------------------" << std::endl;
+        promt();
     }
 }
 #endif
