@@ -29,4 +29,5 @@ SOURCES += \
     021_lambdas_cartesian_product.cpp \
     022_algo_basic.cpp \
     023_algo_find.cpp \
+    024_algo_clamp.cpp \
     main.cpp
