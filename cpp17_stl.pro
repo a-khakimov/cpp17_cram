@@ -28,4 +28,5 @@ SOURCES += \
     020_lambdas_transform_if.cpp \
     021_lambdas_cartesian_product.cpp \
     022_algo_basic.cpp \
+    023_algo_find.cpp \
     main.cpp
