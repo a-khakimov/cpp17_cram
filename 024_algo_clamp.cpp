@@ -18,7 +18,7 @@ static auto clampval (int min, int max)
     };
 }
 
-#if true
+#if false
 int main()
 {
     std::vector<int> v { 0, 1000, 500, 1, 200, 900, 521, 233, 12 };
@@ -36,6 +36,5 @@ int main()
     std::transform(begin(v), end(v), v_norm.begin(), clampval(0, 500));
     std::copy(v_norm.begin(), v_norm.end(), std::ostream_iterator<int>{ std::cout, ", " });
     std::cout << std::endl;
-
 }
 #endif
