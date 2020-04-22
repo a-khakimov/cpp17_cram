@@ -71,7 +71,7 @@ static void promt()
 
 /* g++-8 029_complex_algos_prefix_tree.cpp -o a.out -std=c++17 */
 
-#if true
+#if false
 int main()
 {
     trie<std::string> t;

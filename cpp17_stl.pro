@@ -35,6 +35,7 @@ SOURCES += \
     027_algo_next_permutation.cpp \
     028_algo_merge.cpp \
     029_complex_algos_prefix_tree.cpp \
+    030_complex_algos_fourier_transform.cpp \
     main.cpp
 
 DISTFILES += \
