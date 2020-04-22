@@ -34,4 +34,5 @@ SOURCES += \
     026_algo_std_sample.cpp \
     027_algo_next_permutation.cpp \
     028_algo_merge.cpp \
+    029_complex_algos_prefix_tree.cpp \
     main.cpp
