@@ -27,5 +27,5 @@ SOURCES += \
     019_lambdas_multicall.cpp \
     020_lambdas_transform_if.cpp \
     021_lambdas_cartesian_product.cpp \
-    022_algo.cpp \
+    022_algo_basic.cpp \
     main.cpp

@@ -162,7 +162,7 @@ int main()
         print(v);
     }
     { // transform2
-        std::cout << "-- transform -- " << std::endl;
+        std::cout << "-- transform2 -- " << std::endl;
         std::vector<int> v = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 };
         std::vector<int> result;
         print(v);
