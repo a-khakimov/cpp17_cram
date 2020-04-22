@@ -33,4 +33,5 @@ SOURCES += \
     025_algo_string_search.cpp \
     026_algo_std_sample.cpp \
     027_algo_next_permutation.cpp \
+    028_algo_merge.cpp \
     main.cpp

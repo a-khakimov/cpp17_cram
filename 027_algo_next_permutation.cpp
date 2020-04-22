@@ -4,7 +4,7 @@
 #include <iterator>
 #include <algorithm>
 
-#if true
+#if false
 int main()
 {
     std::vector<std::string> v { "hello", "my", "little", "pony" };
