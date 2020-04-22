@@ -152,5 +152,24 @@ int main()
         print(v1);
         print(v2);
     }
+    { // transform
+        std::cout << "-- transform -- " << std::endl;
+        std::vector<int> v = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+        print(v);
+        std::transform(begin(v), end(v), v.begin(), [](int i){
+            return i * 2;
+        });
+        print(v);
+    }
+    { // transform2
+        std::cout << "-- transform -- " << std::endl;
+        std::vector<int> v = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+        std::vector<int> result;
+        print(v);
+        std::transform(begin(v), end(v), std::back_inserter(result), [](int i){
+            return i * 2;
+        });
+        print(result);
+    }
 }
 #endif
