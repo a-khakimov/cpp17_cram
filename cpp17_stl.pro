@@ -32,4 +32,5 @@ SOURCES += \
     024_algo_clamp.cpp \
     025_algo_string_search.cpp \
     026_algo_std_sample.cpp \
+    027_algo_next_permutation.cpp \
     main.cpp
