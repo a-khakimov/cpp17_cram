@@ -31,4 +31,5 @@ SOURCES += \
     023_algo_find.cpp \
     024_algo_clamp.cpp \
     025_algo_string_search.cpp \
+    026_algo_std_sample.cpp \
     main.cpp
