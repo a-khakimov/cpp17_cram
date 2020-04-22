@@ -116,5 +116,41 @@ int main()
             std::cout << a << ", " << b << std::endl;
         }
     }
+    { // remove and remove_if
+        std::cout << "-- remove and remove_if -- " << std::endl;
+        std::vector<int> v = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+        print(v);
+        const auto new_end = std::remove(begin(v), end(v), 2);
+        v.erase(new_end, end(v));
+        print(v);
+
+        auto odd_number = [](int i){ return i % 2 != 0; };
+        const auto new_end2 = std::remove_if(begin(v), end(v), odd_number);
+        v.erase(new_end2, end(v));
+        print(v);
+    }
+    { // replace and replace_if
+        std::cout << "-- replace and replace_if -- " << std::endl;
+        std::vector<int> v = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+        print(v);
+        std::replace(begin(v), end(v), 2, 222);
+        print(v);
+        auto odd_number = [](int i){ return i % 2 != 0; };
+        std::replace_if(begin(v), end(v), odd_number, 73);
+        print(v);
+    }
+    { // copy_if and remove_copy_if
+        std::cout << "-- copy_if and remove_copy_if -- " << std::endl;
+        std::vector<int> v = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+        std::vector<int> v1;
+        std::vector<int> v2;
+        print(v);
+        auto odd_number = [](int i){ return i % 2 != 0; };
+        auto even_number = [](int i){ return i % 2 == 0; };
+        std::remove_copy_if(begin(v), end(v), std::back_inserter(v1), odd_number);
+        std::copy_if(begin(v), end(v), std::back_inserter(v2), even_number);
+        print(v1);
+        print(v2);
+    }
 }
 #endif
