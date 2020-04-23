@@ -43,6 +43,7 @@ SOURCES += \
     035_complex_algos_remove_whitespaces.cpp \
     036_complex_algos_string_compression_decompression.cpp \
     037_custom_string_class.cpp \
+    038_regex.cpp \
     main.cpp
 
 DISTFILES += \

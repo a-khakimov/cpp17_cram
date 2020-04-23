@@ -77,7 +77,7 @@ std::ostream& operator << (std::ostream& os, const ci_string& str) {
     return os.write(str.data(), str.size());
 }
 
-#if true
+#if false
 int main()
 {
     std::cout << "string: " << std::string("Hello") << std::endl;
