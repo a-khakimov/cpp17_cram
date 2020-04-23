@@ -38,6 +38,7 @@ SOURCES += \
     030_complex_algos_fourier_transform.cpp \
     031_complex_algos_inner_product.cpp \
     032_complex_algos_malderbrot.cpp \
+    033_complex_algos_split.cpp \
     main.cpp
 
 DISTFILES += \
