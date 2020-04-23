@@ -46,6 +46,7 @@ SOURCES += \
     038_regex.cpp \
     039_opt_std_ratio.cpp \
     040_opt_std_chrono.cpp \
+    041_opt_std_optional.cpp \
     main.cpp
 
 DISTFILES += \
