@@ -41,7 +41,7 @@ std::string decompress(const std::string& s)
     return r.str();
 }
 
-#if true
+#if false
 int main()
 {
     std::string s = "abbcccddddeeeeeffffffggggggg";

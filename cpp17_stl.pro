@@ -42,6 +42,7 @@ SOURCES += \
     034_complex_algos_gather.cpp \
     035_complex_algos_remove_whitespaces.cpp \
     036_complex_algos_string_compression_decompression.cpp \
+    037_custom_string_class.cpp \
     main.cpp
 
 DISTFILES += \
