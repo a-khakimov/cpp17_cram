@@ -44,6 +44,7 @@ SOURCES += \
     036_complex_algos_string_compression_decompression.cpp \
     037_custom_string_class.cpp \
     038_regex.cpp \
+    039_opt_std_ratio.cpp \
     main.cpp
 
 DISTFILES += \
