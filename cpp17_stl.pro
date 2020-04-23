@@ -40,6 +40,7 @@ SOURCES += \
     032_complex_algos_malderbrot.cpp \
     033_complex_algos_split.cpp \
     034_complex_algos_gather.cpp \
+    035_complex_algos_remove_whitespaces.cpp \
     main.cpp
 
 DISTFILES += \

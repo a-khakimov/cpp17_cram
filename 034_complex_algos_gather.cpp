@@ -22,7 +22,7 @@ void gather_sort(It first, It last, It gather_pos, F comp_func)
     std::stable_sort(gather_pos, last, comp_func);
 }
 
-#if true
+#if false
 int main()
 {
     auto is_a = [](char c) {
