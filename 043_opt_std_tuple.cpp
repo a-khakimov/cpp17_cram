@@ -41,7 +41,7 @@ static auto zip(const T1& a, const T2& b)
     return std::apply(std::apply(z, a), b);
 }
 
-#if true
+#if false
 int main()
 {
     auto student_desc = std::make_tuple("ID", "Name", "GPA");
