@@ -36,6 +36,7 @@ SOURCES += \
     028_algo_merge.cpp \
     029_complex_algos_prefix_tree.cpp \
     030_complex_algos_fourier_transform.cpp \
+    031_complex_algos_inner_product.cpp \
     main.cpp
 
 DISTFILES += \

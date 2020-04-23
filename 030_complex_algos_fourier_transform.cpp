@@ -75,7 +75,7 @@ static void print_signal(const csignal& s)
     std::cout << std::endl;
 }
 
-#if true
+#if false
 int main()
 {
     const size_t sig_len = 20;
