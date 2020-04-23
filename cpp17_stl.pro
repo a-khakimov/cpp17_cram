@@ -47,6 +47,7 @@ SOURCES += \
     039_opt_std_ratio.cpp \
     040_opt_std_chrono.cpp \
     041_opt_std_optional.cpp \
+    042_opt_std_apply.cpp \
     main.cpp
 
 DISTFILES += \
