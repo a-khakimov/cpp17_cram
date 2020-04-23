@@ -50,6 +50,7 @@ SOURCES += \
     042_opt_std_apply.cpp \
     043_opt_std_tuple.cpp \
     044_opt_std_any.cpp \
+    045_opt_std_variant.cpp \
     main.cpp
 
 DISTFILES += \
