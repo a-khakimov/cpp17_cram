@@ -45,6 +45,7 @@ SOURCES += \
     037_custom_string_class.cpp \
     038_regex.cpp \
     039_opt_std_ratio.cpp \
+    040_opt_std_chrono.cpp \
     main.cpp
 
 DISTFILES += \
