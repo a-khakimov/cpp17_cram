@@ -37,6 +37,7 @@ SOURCES += \
     029_complex_algos_prefix_tree.cpp \
     030_complex_algos_fourier_transform.cpp \
     031_complex_algos_inner_product.cpp \
+    032_complex_algos_malderbrot.cpp \
     main.cpp
 
 DISTFILES += \

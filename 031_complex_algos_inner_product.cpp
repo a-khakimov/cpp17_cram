@@ -5,7 +5,7 @@
 #include <vector>
 #include <iterator>
 
-#if true
+#if false
 int main()
 {
     const size_t sig_len = 50;
