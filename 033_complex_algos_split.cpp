@@ -20,7 +20,7 @@ InIt split (InIt it, InIt end_it, OutIt out_it, T split_val)
     return it;
 }
 
-#if true
+#if false
 int main()
 {
     const std::string s = {"hello my little pony"};

@@ -39,6 +39,7 @@ SOURCES += \
     031_complex_algos_inner_product.cpp \
     032_complex_algos_malderbrot.cpp \
     033_complex_algos_split.cpp \
+    034_complex_algos_gather.cpp \
     main.cpp
 
 DISTFILES += \
