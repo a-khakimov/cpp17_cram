@@ -51,6 +51,7 @@ SOURCES += \
     043_opt_std_tuple.cpp \
     044_opt_std_any.cpp \
     045_opt_std_variant.cpp \
+    046_opt_unique_ptr.cpp \
     main.cpp
 
 DISTFILES += \
