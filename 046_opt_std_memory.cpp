@@ -35,6 +35,16 @@ void some_func_shared_ptr(const std::shared_ptr<Foo> foo)
     foo->foo();
 }
 
+void weak_ptr_info(const std::weak_ptr<Foo>& p)
+{
+    std::cout << "expired: " << p.expired() << ", use_count: " << p.use_count() << " > ";
+    if (const auto sp = p.lock(); sp) {
+        sp->foo();
+    } else {
+        std::cout << "null" << std::endl;
+    }
+}
+
 #if true
 int main()
 {
@@ -62,6 +72,17 @@ int main()
         }
         auto foo2_copy1 = foo2;
         some_func_shared_ptr(foo2_copy1);
+    }
+    std::cout << "=== weak_ptr ===" << std::endl;
+    {
+        std::weak_ptr<Foo> weak_foo1;
+        weak_ptr_info(weak_foo1);
+        {
+            auto shared_foo = std::make_shared<Foo>("shared_foo");
+            weak_foo1 = shared_foo;
+            weak_ptr_info(weak_foo1);
+        }
+        weak_ptr_info(weak_foo1);
     }
 }
 #endif
