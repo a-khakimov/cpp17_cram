@@ -45,7 +45,7 @@ void weak_ptr_info(const std::weak_ptr<Foo>& p)
     }
 }
 
-#if true
+#if false
 int main()
 {
     std::cout << "=== unique_ptr ===" << std::endl;

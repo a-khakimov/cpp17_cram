@@ -25,7 +25,7 @@ int main()
     std::cout << std::endl;
 
     std::cout << std::inner_product(as.begin(), as.end(), ds.begin(), 0.0, std::plus<double>{}, [](double a, double b) {
-        return std::pow(a- b, 2);
+        return std::pow(a - b, 2);
     });
     std::cout << std::endl;
 }

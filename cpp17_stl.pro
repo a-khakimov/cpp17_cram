@@ -52,6 +52,8 @@ SOURCES += \
     044_opt_std_any.cpp \
     045_opt_std_variant.cpp \
     046_opt_std_memory.cpp \
+    047_opt_legacy_shared_ptr.cpp \
+    048_opt_shared_members.cpp \
     main.cpp
 
 DISTFILES += \
