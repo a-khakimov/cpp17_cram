@@ -62,7 +62,7 @@ SOURCES += \
     052_mt_sleep.cpp \
     053_mt_threads.cpp \
     054_mt_shared_and_unique_locks.cpp \
-    055_deadlock_vs_scoped_lock.cpp \
+    055_mt_deadlock_vs_scoped_lock.cpp \
     main.cpp
 
 DISTFILES += \
