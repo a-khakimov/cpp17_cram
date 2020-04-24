@@ -6,7 +6,7 @@ struct dick {
     size_t width;
     dick(size_t l, size_t w)
         : length { (l) }, width { w } {
-        std::cout << "Dick default: " << length << ", " << width << std::endl;
+        std::cout << "Dick: " << length << ", " << width << std::endl;
     }
     dick(dick&& d)
         : length { (d.length) }, width { d.width } {
@@ -47,6 +47,8 @@ int main()
     std::shared_ptr<std::string> sh_name;
     std::shared_ptr<size_t> sh_age;
     std::shared_ptr<dick> sh_dick;
+
+    std::cout << " - " << std::endl;
 
     {
         auto sh_person = std::make_shared<person>("Rick", 60, dick(20, 5));
