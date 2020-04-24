@@ -25,9 +25,20 @@ void some_func_unique_ptr(const std::unique_ptr<Foo> foo)
     foo->foo();
 }
 
+void some_func_shared_ptr(const std::shared_ptr<Foo> foo)
+{
+    if (!foo) {
+        return;
+    }
+
+    std::cout << "use_count=" << foo.use_count() << " for ";
+    foo->foo();
+}
+
 #if true
 int main()
 {
+    std::cout << "=== unique_ptr ===" << std::endl;
     {
         std::unique_ptr<Foo> foo1 { new Foo("foo1") };
         auto foo2 { std::make_unique<Foo>("foo2") };
@@ -36,6 +47,21 @@ int main()
         some_func_unique_ptr(std::move(foo1));
         some_func_unique_ptr(std::make_unique<Foo>("foo3"));
         //foo1->foo(); // bad
+    }
+    std::cout << "=== shared_ptr ===" << std::endl;
+    {
+        std::shared_ptr<Foo> foo1 { new Foo("foo1") };
+        some_func_shared_ptr(foo1);
+        some_func_shared_ptr(std::move(foo1));
+        //foo1->foo(); // bad
+        auto foo2 { std::make_shared<Foo>("foo2") };
+        auto foo2_copy0 = foo2;
+        {
+            auto foo2_copy2 = foo2;
+            some_func_shared_ptr(foo2_copy2);
+        }
+        auto foo2_copy1 = foo2;
+        some_func_shared_ptr(foo2_copy1);
     }
 }
 #endif
