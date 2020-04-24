@@ -33,7 +33,7 @@ void print_distro(T distro, size_t samples, const std::string& n)
 
 using namespace std;
 
-#if true
+#if false
 int main()
 {
     size_t samples = 100;

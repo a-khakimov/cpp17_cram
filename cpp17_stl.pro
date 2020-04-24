@@ -3,7 +3,9 @@ CONFIG += console
 CONFIG -= app_bundle
 CONFIG -= qt
 
-QMAKE_CXXFLAGS += -std=c++17 -fconcepts # -D_GLIBCXX_DEBUG -pedantic
+QMAKE_CXXFLAGS += -std=c++1z -fconcepts # -D_GLIBCXX_DEBUG -pedantic
+
+LIBS += -ltbb
 
 SOURCES += \
     001_containers_erase-remove_idiom.cpp \
@@ -56,6 +58,7 @@ SOURCES += \
     048_opt_shared_members.cpp \
     049_opt_random_generator.cpp \
     050_opt_rand_dist.cpp \
+    051_mt_execution.cpp \
     main.cpp
 
 DISTFILES += \
