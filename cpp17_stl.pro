@@ -68,6 +68,7 @@ SOURCES += \
     058_mt_std_async.cpp \
     059_mt_producer_consumer_and_condition_variable.cpp \
     060_mt_producers_consumers_and_condition_variable.cpp \
+    061_mt_malderbrot.cpp \
     main.cpp
 
 DISTFILES += \
