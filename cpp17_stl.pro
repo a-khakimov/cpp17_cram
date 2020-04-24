@@ -61,6 +61,7 @@ SOURCES += \
     051_mt_execution.cpp \
     052_mt_sleep.cpp \
     053_mt_threads.cpp \
+    054_mt_shared_and_unique_locks.cpp \
     main.cpp
 
 DISTFILES += \

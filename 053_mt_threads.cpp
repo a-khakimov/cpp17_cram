@@ -3,7 +3,7 @@
 
 using namespace std::chrono_literals;
 
-#if true
+#if false
 int main()
 {
     std::cout << "proc: " << std::thread::hardware_concurrency() << std::endl;
