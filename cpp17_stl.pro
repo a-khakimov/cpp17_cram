@@ -55,6 +55,7 @@ SOURCES += \
     047_opt_legacy_shared_ptr.cpp \
     048_opt_shared_members.cpp \
     049_opt_random_generator.cpp \
+    050_opt_rand_dist.cpp \
     main.cpp
 
 DISTFILES += \

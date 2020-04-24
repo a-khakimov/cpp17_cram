@@ -27,7 +27,7 @@ void histogram(size_t partitions, size_t samples)
     }
 }
 
-#if true
+#if false
 int main()
 {
     size_t partitions = 15;
