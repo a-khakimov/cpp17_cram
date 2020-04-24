@@ -59,6 +59,7 @@ SOURCES += \
     049_opt_random_generator.cpp \
     050_opt_rand_dist.cpp \
     051_mt_execution.cpp \
+    052_mt_sleep.cpp \
     main.cpp
 
 DISTFILES += \
