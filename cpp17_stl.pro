@@ -66,6 +66,7 @@ SOURCES += \
     056_mt_concurrency_cout.cpp \
     057_mt_call_once.cpp \
     058_mt_std_async.cpp \
+    059_mt_producer_consumer_and_condition_variable.cpp \
     main.cpp
 
 DISTFILES += \

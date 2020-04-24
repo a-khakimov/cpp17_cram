@@ -30,7 +30,7 @@ static size_t vowels(const std::string& s)
     return std::count_if(s.begin(), s.end(), is_vowel);
 }
 
-#if true
+#if false
 int main()
 {
     std::cin.setf(std::ios::skipws);
