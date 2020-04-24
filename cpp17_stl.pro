@@ -64,6 +64,7 @@ SOURCES += \
     054_mt_shared_and_unique_locks.cpp \
     055_mt_deadlock_vs_scoped_lock.cpp \
     056_mt_concurrency_cout.cpp \
+    057_mt_call_once.cpp \
     main.cpp
 
 DISTFILES += \
