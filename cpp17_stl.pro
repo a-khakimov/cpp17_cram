@@ -54,6 +54,7 @@ SOURCES += \
     046_opt_std_memory.cpp \
     047_opt_legacy_shared_ptr.cpp \
     048_opt_shared_members.cpp \
+    049_opt_random_generator.cpp \
     main.cpp
 
 DISTFILES += \

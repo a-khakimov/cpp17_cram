@@ -41,7 +41,7 @@ struct person {
     }
 };
 
-#if true
+#if false
 int main()
 {
     std::shared_ptr<std::string> sh_name;
