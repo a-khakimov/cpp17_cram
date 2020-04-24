@@ -27,14 +27,14 @@ static void exclusive_throw()
     throw 123;
 }
 
-#if true
+#if false
 int main()
 {
     {
-        //shared_lck sl1 { shared_mut };
-        //std::cout << "shared lock once" << std::endl;
+        shared_lck sl1 { shared_mut };
+        std::cout << "shared lock once" << std::endl;
         {
-            //shared_lck sl2 { shared_mut };
+            shared_lck sl2 { shared_mut };
             std::cout << "shared lock twice" << std::endl;
             print_exclusive();
         }
