@@ -6,10 +6,11 @@
 
 std::once_flag callflag;
 
-#if true
+#if false
 int main()
 {
     auto print_once = []() {
+        // init database (for example)
         std::cout << "!";
     };
 

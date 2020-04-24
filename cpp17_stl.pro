@@ -65,6 +65,7 @@ SOURCES += \
     055_mt_deadlock_vs_scoped_lock.cpp \
     056_mt_concurrency_cout.cpp \
     057_mt_call_once.cpp \
+    058_mt_std_async.cpp \
     main.cpp
 
 DISTFILES += \
