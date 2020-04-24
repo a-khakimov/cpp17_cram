@@ -63,6 +63,7 @@ SOURCES += \
     053_mt_threads.cpp \
     054_mt_shared_and_unique_locks.cpp \
     055_mt_deadlock_vs_scoped_lock.cpp \
+    056_mt_concurrency_cout.cpp \
     main.cpp
 
 DISTFILES += \

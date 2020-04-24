@@ -7,7 +7,7 @@ using namespace std::chrono_literals;
 std::mutex mut_a;
 std::mutex mut_b;
 
-#if true
+#if false
 int main()
 {
     std::cout << "proc: " << std::thread::hardware_concurrency() << std::endl;
