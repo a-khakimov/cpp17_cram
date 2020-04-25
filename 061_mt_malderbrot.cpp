@@ -40,7 +40,7 @@ static auto malderbrot_iterations(cmplx c)
     return iterations;
 }
 
-#if true
+#if false
 int main()
 {
     const size_t w = 200;
