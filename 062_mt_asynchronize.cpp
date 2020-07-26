@@ -66,7 +66,7 @@ static auto async_adapter(F f)
     };
 }
 
-#if true
+#if false
 int main()
 {
     auto pcreate = asynchronize(create);

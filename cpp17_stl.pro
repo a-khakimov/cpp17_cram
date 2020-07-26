@@ -70,6 +70,7 @@ SOURCES += \
     060_mt_producers_consumers_and_condition_variable.cpp \
     061_mt_malderbrot.cpp \
     062_mt_asynchronize.cpp \
+    063_fs_grep.cpp \
     main.cpp
 
 DISTFILES += \
